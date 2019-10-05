@@ -1,0 +1,8 @@
+*.pdb
+*.ilk
+*.exe
+*.cso
+*.ipdb
+*.iobj
+/Build/.vs
+/Build/x64

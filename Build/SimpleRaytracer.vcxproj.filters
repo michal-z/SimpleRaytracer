@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="External">
+      <UniqueIdentifier>{05a7442f-d574-48ed-a297-91eb564739c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\imgui">
+      <UniqueIdentifier>{63dfe059-2d5a-4562-b7dd-1e45a2e36493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{7fa9c078-e133-442e-bdd0-fe559bc08a27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\EASTL">
+      <UniqueIdentifier>{ca49f9e0-98cb-40b8-9bd7-64ed07c356f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\EASTL\source">
+      <UniqueIdentifier>{6b35d85f-3f57-41df-8bf8-ca055730b4dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\EASTL\bonus">
+      <UniqueIdentifier>{750b5f9b-a49a-4630-8361-15e3a2af6062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\EASTL\internal">
+      <UniqueIdentifier>{3d88bba3-e975-4ad1-a42a-fa20cc58ea9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\EABASE">
+      <UniqueIdentifier>{9a04cd7f-9708-4e0e-a75f-470aab47241d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\EABASE\config">
+      <UniqueIdentifier>{116ddac6-20f3-44ad-a15f-3e1a68065ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\DirectXMath">
+      <UniqueIdentifier>{df63e4cf-18d6-4c84-bd4d-7da8f7e08713}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Library.cpp" />
+    <ClCompile Include="..\Source\External\imgui\imgui.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\imgui\imgui_demo.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\imgui\imgui_draw.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\imgui\imgui_widgets.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\stb_image.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\cgltf.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\EASTL\source\allocator_eastl.cpp">
+      <Filter>External\EASTL\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\EASTL\source\hashtable.cpp">
+      <Filter>External\EASTL\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\EASTL\source\numeric_limits.cpp">
+      <Filter>External\EASTL\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\EASTL\source\red_black_tree.cpp">
+      <Filter>External\EASTL\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\EASTL\source\thread_support.cpp">
+      <Filter>External\EASTL\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\EASTL\source\assert.cpp">
+      <Filter>External\EASTL\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\EASTL\source\fixed_pool.cpp">
+      <Filter>External\EASTL\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\EASTL\source\intrusive_list.cpp">
+      <Filter>External\EASTL\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\EASTL\source\string.cpp">
+      <Filter>External\EASTL\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SimpleRaytracer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Library.h" />
+    <ClInclude Include="..\Source\External\d3dx12.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\imgui\imconfig.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\imgui\imgui.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\imgui\imgui_internal.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\imgui\imstb_rectpack.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\imgui\imstb_textedit.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\imgui\imstb_truetype.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\CPUAndGPUCommon.h" />
+    <ClInclude Include="..\Source\External\stb_image.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\cgltf.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\meow_hash_x64_aesni.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\adaptors.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\call_traits.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\compressed_pair.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\fixed_ring_buffer.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\fixed_tuple_vector.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\intrusive_sdlist.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\intrusive_slist.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\list_map.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\lru_cache.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\ring_buffer.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\sort_extra.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\sparse_matrix.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bonus\tuple_vector.h">
+      <Filter>External\EASTL\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\allocator_traits.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\allocator_traits_fwd_decls.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\char_traits.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\config.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\copy_help.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\enable_shared.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\fill_help.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\fixed_pool.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\function.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\function_detail.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\function_help.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\functional_base.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\generic_iterator.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\hashtable.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\in_place_t.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\integer_sequence.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\intrusive_hashtable.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\mem_fn.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\memory_base.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\meta.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\move_help.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\pair_fwd_decls.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\piecewise_construct_t.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\red_black_tree.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\smart_ptr.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\thread_support.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\tuple_fwd_decls.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\type_compound.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\type_fundamental.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\type_pod.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\type_properties.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\internal\type_transformations.h">
+      <Filter>External\EASTL\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\algorithm.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\allocator.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\allocator_malloc.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\any.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\array.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bitset.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\bitvector.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\chrono.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\core_allocator.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\core_allocator_adapter.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\deque.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\fixed_allocator.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\fixed_function.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\fixed_hash_map.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\fixed_hash_set.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\fixed_list.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\fixed_map.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\fixed_set.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\fixed_slist.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\fixed_string.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\fixed_substring.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\fixed_vector.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\functional.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\hash_map.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\hash_set.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\heap.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\initializer_list.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\intrusive_hash_map.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\intrusive_hash_set.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\intrusive_list.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\intrusive_ptr.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\iterator.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\linked_array.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\linked_ptr.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\list.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\map.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\memory.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\meta.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\numeric.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\numeric_limits.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\optional.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\priority_queue.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\queue.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\random.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\ratio.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\safe_ptr.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\scoped_array.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\scoped_ptr.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\segmented_vector.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\set.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\shared_array.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\shared_ptr.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\slist.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\sort.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\span.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\stack.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\string.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\string_hash_map.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\string_map.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\string_view.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\tuple.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\type_traits.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\unique_ptr.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\unordered_map.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\unordered_set.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\utility.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\variant.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\vector.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\vector_map.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\vector_multimap.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\vector_multiset.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\vector_set.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\version.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EASTL\weak_ptr.h">
+      <Filter>External\EASTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EABase\eabase.h">
+      <Filter>External\EABASE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EABase\eahave.h">
+      <Filter>External\EABASE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EABase\earesult.h">
+      <Filter>External\EABASE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EABase\eastdarg.h">
+      <Filter>External\EABASE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EABase\eaunits.h">
+      <Filter>External\EABASE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EABase\int128.h">
+      <Filter>External\EABASE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EABase\nullptr.h">
+      <Filter>External\EABASE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EABase\version.h">
+      <Filter>External\EABASE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EABase\config\eacompiler.h">
+      <Filter>External\EABASE\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EABase\config\eacompilertraits.h">
+      <Filter>External\EABASE\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\EABase\config\eaplatform.h">
+      <Filter>External\EABASE\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\DirectXMath\DirectXCollision.h">
+      <Filter>External\DirectXMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\DirectXMath\DirectXColors.h">
+      <Filter>External\DirectXMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\DirectXMath\DirectXMath.h">
+      <Filter>External\DirectXMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\External\DirectXMath\DirectXPackedVector.h">
+      <Filter>External\DirectXMath</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Source\Shaders\Raytracing.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Source\Shaders\GenerateMipmaps.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Source\External\DirectXMath\DirectXCollision.inl">
+      <Filter>External\DirectXMath</Filter>
+    </None>
+    <None Include="..\Source\External\DirectXMath\DirectXMathConvert.inl">
+      <Filter>External\DirectXMath</Filter>
+    </None>
+    <None Include="..\Source\External\DirectXMath\DirectXMathMatrix.inl">
+      <Filter>External\DirectXMath</Filter>
+    </None>
+    <None Include="..\Source\External\DirectXMath\DirectXMathMisc.inl">
+      <Filter>External\DirectXMath</Filter>
+    </None>
+    <None Include="..\Source\External\DirectXMath\DirectXMathVector.inl">
+      <Filter>External\DirectXMath</Filter>
+    </None>
+    <None Include="..\Source\External\DirectXMath\DirectXPackedVector.inl">
+      <Filter>External\DirectXMath</Filter>
+    </None>
+  </ItemGroup>
+</Project>

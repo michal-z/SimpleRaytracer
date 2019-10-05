@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\SimpleRaytracer.cpp" />
+    <ClCompile Include="..\Source\External\cgltf.cpp" />
+    <ClCompile Include="..\Source\External\EASTL\source\allocator_eastl.cpp" />
+    <ClCompile Include="..\Source\External\EASTL\source\assert.cpp" />
+    <ClCompile Include="..\Source\External\EASTL\source\fixed_pool.cpp" />
+    <ClCompile Include="..\Source\External\EASTL\source\hashtable.cpp" />
+    <ClCompile Include="..\Source\External\EASTL\source\intrusive_list.cpp" />
+    <ClCompile Include="..\Source\External\EASTL\source\numeric_limits.cpp" />
+    <ClCompile Include="..\Source\External\EASTL\source\red_black_tree.cpp" />
+    <ClCompile Include="..\Source\External\EASTL\source\string.cpp" />
+    <ClCompile Include="..\Source\External\EASTL\source\thread_support.cpp" />
+    <ClCompile Include="..\Source\External\imgui\imgui.cpp" />
+    <ClCompile Include="..\Source\External\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\Source\External\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\Source\External\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="..\Source\External\stb_image.cpp" />
+    <ClCompile Include="..\Source\Library.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\CPUAndGPUCommon.h" />
+    <ClInclude Include="..\Source\External\cgltf.h" />
+    <ClInclude Include="..\Source\External\d3dx12.h" />
+    <ClInclude Include="..\Source\External\DirectXMath\DirectXCollision.h" />
+    <ClInclude Include="..\Source\External\DirectXMath\DirectXColors.h" />
+    <ClInclude Include="..\Source\External\DirectXMath\DirectXMath.h" />
+    <ClInclude Include="..\Source\External\DirectXMath\DirectXPackedVector.h" />
+    <ClInclude Include="..\Source\External\EABase\config\eacompiler.h" />
+    <ClInclude Include="..\Source\External\EABase\config\eacompilertraits.h" />
+    <ClInclude Include="..\Source\External\EABase\config\eaplatform.h" />
+    <ClInclude Include="..\Source\External\EABase\eabase.h" />
+    <ClInclude Include="..\Source\External\EABase\eahave.h" />
+    <ClInclude Include="..\Source\External\EABase\earesult.h" />
+    <ClInclude Include="..\Source\External\EABase\eastdarg.h" />
+    <ClInclude Include="..\Source\External\EABase\eaunits.h" />
+    <ClInclude Include="..\Source\External\EABase\int128.h" />
+    <ClInclude Include="..\Source\External\EABase\nullptr.h" />
+    <ClInclude Include="..\Source\External\EABase\version.h" />
+    <ClInclude Include="..\Source\External\EASTL\algorithm.h" />
+    <ClInclude Include="..\Source\External\EASTL\allocator.h" />
+    <ClInclude Include="..\Source\External\EASTL\allocator_malloc.h" />
+    <ClInclude Include="..\Source\External\EASTL\any.h" />
+    <ClInclude Include="..\Source\External\EASTL\array.h" />
+    <ClInclude Include="..\Source\External\EASTL\bitset.h" />
+    <ClInclude Include="..\Source\External\EASTL\bitvector.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\adaptors.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\call_traits.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\compressed_pair.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\fixed_ring_buffer.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\fixed_tuple_vector.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\intrusive_sdlist.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\intrusive_slist.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\list_map.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\lru_cache.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\ring_buffer.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\sort_extra.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\sparse_matrix.h" />
+    <ClInclude Include="..\Source\External\EASTL\bonus\tuple_vector.h" />
+    <ClInclude Include="..\Source\External\EASTL\chrono.h" />
+    <ClInclude Include="..\Source\External\EASTL\core_allocator.h" />
+    <ClInclude Include="..\Source\External\EASTL\core_allocator_adapter.h" />
+    <ClInclude Include="..\Source\External\EASTL\deque.h" />
+    <ClInclude Include="..\Source\External\EASTL\fixed_allocator.h" />
+    <ClInclude Include="..\Source\External\EASTL\fixed_function.h" />
+    <ClInclude Include="..\Source\External\EASTL\fixed_hash_map.h" />
+    <ClInclude Include="..\Source\External\EASTL\fixed_hash_set.h" />
+    <ClInclude Include="..\Source\External\EASTL\fixed_list.h" />
+    <ClInclude Include="..\Source\External\EASTL\fixed_map.h" />
+    <ClInclude Include="..\Source\External\EASTL\fixed_set.h" />
+    <ClInclude Include="..\Source\External\EASTL\fixed_slist.h" />
+    <ClInclude Include="..\Source\External\EASTL\fixed_string.h" />
+    <ClInclude Include="..\Source\External\EASTL\fixed_substring.h" />
+    <ClInclude Include="..\Source\External\EASTL\fixed_vector.h" />
+    <ClInclude Include="..\Source\External\EASTL\functional.h" />
+    <ClInclude Include="..\Source\External\EASTL\hash_map.h" />
+    <ClInclude Include="..\Source\External\EASTL\hash_set.h" />
+    <ClInclude Include="..\Source\External\EASTL\heap.h" />
+    <ClInclude Include="..\Source\External\EASTL\initializer_list.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\allocator_traits.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\allocator_traits_fwd_decls.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\char_traits.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\config.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\copy_help.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\enable_shared.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\fill_help.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\fixed_pool.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\function.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\functional_base.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\function_detail.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\function_help.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\generic_iterator.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\hashtable.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\integer_sequence.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\intrusive_hashtable.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\in_place_t.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\memory_base.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\mem_fn.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\meta.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\move_help.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\pair_fwd_decls.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\piecewise_construct_t.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\red_black_tree.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\smart_ptr.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\thread_support.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\tuple_fwd_decls.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\type_compound.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\type_fundamental.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\type_pod.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\type_properties.h" />
+    <ClInclude Include="..\Source\External\EASTL\internal\type_transformations.h" />
+    <ClInclude Include="..\Source\External\EASTL\intrusive_hash_map.h" />
+    <ClInclude Include="..\Source\External\EASTL\intrusive_hash_set.h" />
+    <ClInclude Include="..\Source\External\EASTL\intrusive_list.h" />
+    <ClInclude Include="..\Source\External\EASTL\intrusive_ptr.h" />
+    <ClInclude Include="..\Source\External\EASTL\iterator.h" />
+    <ClInclude Include="..\Source\External\EASTL\linked_array.h" />
+    <ClInclude Include="..\Source\External\EASTL\linked_ptr.h" />
+    <ClInclude Include="..\Source\External\EASTL\list.h" />
+    <ClInclude Include="..\Source\External\EASTL\map.h" />
+    <ClInclude Include="..\Source\External\EASTL\memory.h" />
+    <ClInclude Include="..\Source\External\EASTL\meta.h" />
+    <ClInclude Include="..\Source\External\EASTL\numeric.h" />
+    <ClInclude Include="..\Source\External\EASTL\numeric_limits.h" />
+    <ClInclude Include="..\Source\External\EASTL\optional.h" />
+    <ClInclude Include="..\Source\External\EASTL\priority_queue.h" />
+    <ClInclude Include="..\Source\External\EASTL\queue.h" />
+    <ClInclude Include="..\Source\External\EASTL\random.h" />
+    <ClInclude Include="..\Source\External\EASTL\ratio.h" />
+    <ClInclude Include="..\Source\External\EASTL\safe_ptr.h" />
+    <ClInclude Include="..\Source\External\EASTL\scoped_array.h" />
+    <ClInclude Include="..\Source\External\EASTL\scoped_ptr.h" />
+    <ClInclude Include="..\Source\External\EASTL\segmented_vector.h" />
+    <ClInclude Include="..\Source\External\EASTL\set.h" />
+    <ClInclude Include="..\Source\External\EASTL\shared_array.h" />
+    <ClInclude Include="..\Source\External\EASTL\shared_ptr.h" />
+    <ClInclude Include="..\Source\External\EASTL\slist.h" />
+    <ClInclude Include="..\Source\External\EASTL\sort.h" />
+    <ClInclude Include="..\Source\External\EASTL\span.h" />
+    <ClInclude Include="..\Source\External\EASTL\stack.h" />
+    <ClInclude Include="..\Source\External\EASTL\string.h" />
+    <ClInclude Include="..\Source\External\EASTL\string_hash_map.h" />
+    <ClInclude Include="..\Source\External\EASTL\string_map.h" />
+    <ClInclude Include="..\Source\External\EASTL\string_view.h" />
+    <ClInclude Include="..\Source\External\EASTL\tuple.h" />
+    <ClInclude Include="..\Source\External\EASTL\type_traits.h" />
+    <ClInclude Include="..\Source\External\EASTL\unique_ptr.h" />
+    <ClInclude Include="..\Source\External\EASTL\unordered_map.h" />
+    <ClInclude Include="..\Source\External\EASTL\unordered_set.h" />
+    <ClInclude Include="..\Source\External\EASTL\utility.h" />
+    <ClInclude Include="..\Source\External\EASTL\variant.h" />
+    <ClInclude Include="..\Source\External\EASTL\vector.h" />
+    <ClInclude Include="..\Source\External\EASTL\vector_map.h" />
+    <ClInclude Include="..\Source\External\EASTL\vector_multimap.h" />
+    <ClInclude Include="..\Source\External\EASTL\vector_multiset.h" />
+    <ClInclude Include="..\Source\External\EASTL\vector_set.h" />
+    <ClInclude Include="..\Source\External\EASTL\version.h" />
+    <ClInclude Include="..\Source\External\EASTL\weak_ptr.h" />
+    <ClInclude Include="..\Source\External\imgui\imconfig.h" />
+    <ClInclude Include="..\Source\External\imgui\imgui.h" />
+    <ClInclude Include="..\Source\External\imgui\imgui_internal.h" />
+    <ClInclude Include="..\Source\External\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\Source\External\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\Source\External\imgui\imstb_truetype.h" />
+    <ClInclude Include="..\Source\External\meow_hash_x64_aesni.h" />
+    <ClInclude Include="..\Source\External\stb_image.h" />
+    <ClInclude Include="..\Source\Library.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Source\Shaders\GenerateMipmaps.hlsl" />
+    <FxCompile Include="..\Source\Shaders\Raytracing.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Library</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.3</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Library</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.3</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)Data\Shaders\%(Filename).lib.cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)Data\Shaders\%(Filename).lib.cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Source\External\DirectXMath\DirectXCollision.inl" />
+    <None Include="..\Source\External\DirectXMath\DirectXMathConvert.inl" />
+    <None Include="..\Source\External\DirectXMath\DirectXMathMatrix.inl" />
+    <None Include="..\Source\External\DirectXMath\DirectXMathMisc.inl" />
+    <None Include="..\Source\External\DirectXMath\DirectXMathVector.inl" />
+    <None Include="..\Source\External\DirectXMath\DirectXPackedVector.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{89B82422-AD60-4402-A07C-68CA8C26D63A}</ProjectGuid>
+    <RootNamespace>SimpleRaytracer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\</OutDir>
+    <TargetName>$(ProjectName)Debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>External.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>NOMINMAX;WIN32_LEAN_AND_MEAN;EA_COMPILER_NO_EXCEPTIONS;EA_COMPILER_NO_RTTI;D3DX12_NO_STATE_OBJECT_HELPERS;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Source\External</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>4238;4324</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dxguid.lib;d3d12.lib;dxgi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <EntryPointName>MainCS</EntryPointName>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>6.0</ShaderModel>
+      <ObjectFileOutput>$(OutDir)Data\Shaders\%(Filename).cs.cso</ObjectFileOutput>
+      <ShaderType>Compute</ShaderType>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NOMINMAX;WIN32_LEAN_AND_MEAN;EA_COMPILER_NO_EXCEPTIONS;EA_COMPILER_NO_RTTI;D3DX12_NO_STATE_OBJECT_HELPERS;_CRT_SECURE_NO_WARNINGS;_MBCS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Source\External</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableSpecificWarnings>4238;4324</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>dxguid.lib;d3d12.lib;dxgi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <EntryPointName>MainCS</EntryPointName>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>6.0</ShaderModel>
+      <ObjectFileOutput>$(OutDir)Data\Shaders\%(Filename).cs.cso</ObjectFileOutput>
+      <ShaderType>Compute</ShaderType>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
